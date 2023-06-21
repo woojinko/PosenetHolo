@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: YoloProcessorProfile
   m_EditorClassIdentifier: 
   configurations: []
-  model: {fileID: 5022602860645237092, guid: e0b46301a97a3ac46b3df78149f2eeaa, type: 3}
+  model: {fileID: 5022602860645237092, guid: a522c08bf01fab24494f192fa26e4c28, type: 3}
   minimumProbability: 0.65
   overlapThreshold: 0.5
   channels: 3

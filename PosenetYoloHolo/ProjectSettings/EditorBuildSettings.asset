@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Application/Scenes/Main.unity
+  - enabled: 0
+    path: Assets/Application/Scenes/YOLO.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Application/Scenes/Pose.unity
+    guid: b2e2af14ad6dd7543aff2cd0e4de0983
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 93760696b783e3741bf456dd33549e83, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 2e74441071feca141b6cd26364be300c, type: 2}

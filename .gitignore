@@ -30,3 +30,4 @@
 /**/App_BurstDebugInformation_DoNotShip
 /**/*.onnx
 /**/*.DotSettings
+/**/Builds
