@@ -491,7 +491,7 @@ MonoBehaviour:
   labelObject: {fileID: 5265608571350550316, guid: c1dea6da8253b9e488dc5c58cfccec2e, type: 3}
   cameraFPS: 4
   requestedCameraSize: {x: 896, y: 504}
-  yoloImageSize: {x: 320, y: 256}
+  yoloImageSize: {x: 224, y: 224}
   virtualProjectionPlaneWidth: 1.356
   minIdenticalLabelDistance: 0.3
   labelNotSeenTimeOut: 5

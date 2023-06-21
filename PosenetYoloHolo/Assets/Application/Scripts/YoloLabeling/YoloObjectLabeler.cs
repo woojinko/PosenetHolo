@@ -71,15 +71,28 @@ namespace YoloHolo.YoloLabeling
 
                 var texture = renderTexture.ToTexture2D();
                 await Task.Delay(32);
-
-                var foundObjects = await yoloProcessor.RecognizeObjects(texture);
-
-                ShowRecognitions(foundObjects, cameraTransform);
+                
+                // await for async method to run model to recognize human pose points
+                
+                // show recognized human pose points
+                
+                // destroy textures and objects
                 Destroy(texture);
                 Destroy(cameraTransform.gameObject);
+                
+                /*
+                // await for async method to run model to recognize objects
+                var foundObjects = await yoloProcessor.RecognizeObjects(texture);
+
+                // show recognized foundObjects and labels
+                ShowRecognitions(foundObjects, cameraTransform);
+                
+                // destroy textures and objects
+                Destroy(texture);
+                Destroy(cameraTransform.gameObject);
+                */
             }
         }
-
 
         private void ShowRecognitions(List<YoloItem> recognitions, Transform cameraTransform)
         {
@@ -112,8 +125,8 @@ namespace YoloHolo.YoloLabeling
         {
             var seenBefore = yoloGameObjects.FirstOrDefault(
                 ylo => ylo.Name == obj.Name &&
-                Vector3.Distance(obj.PositionInSpace.Value,
-                    ylo.PositionInSpace.Value) < minIdenticalLabelDistance);
+                       Vector3.Distance(obj.PositionInSpace.Value,
+                           ylo.PositionInSpace.Value) < minIdenticalLabelDistance);
             if (seenBefore != null)
             {
                 seenBefore.TimeLastSeen = Time.time;
